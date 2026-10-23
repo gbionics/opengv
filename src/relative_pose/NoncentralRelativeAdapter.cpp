@@ -29,6 +29,8 @@
  ******************************************************************************/
 
 
+#include <cassert>
+
 #include <opengv/relative_pose/NoncentralRelativeAdapter.hpp>
 
 opengv::relative_pose::NoncentralRelativeAdapter::NoncentralRelativeAdapter(

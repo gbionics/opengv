@@ -54,8 +54,7 @@ IF(BUILD_POSITION_INDEPENDENT_CODE)
 ENDIF()
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/modules/")
-find_package(Eigen REQUIRED)
-set(ADDITIONAL_INCLUDE_DIRS ${EIGEN_INCLUDE_DIRS} ${EIGEN_INCLUDE_DIR}/unsupported)
+find_package(Eigen3 CONFIG REQUIRED)
 
 set( OPENGV_SOURCE_FILES
   src/absolute_pose/modules/main.cpp
@@ -190,7 +189,10 @@ target_include_directories( opengv PUBLIC
                 $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
                 # only when using the lib from the install path
                 $<INSTALL_INTERFACE:include>
-                ${ADDITIONAL_INCLUDE_DIRS} )
+                )
+get_target_property(EIGEN3_INCLUDE_DIR Eigen3::Eigen INTERFACE_INCLUDE_DIRECTORIES)
+target_include_directories(opengv PRIVATE ${EIGEN3_INCLUDE_DIR}/unsupported)
+target_link_libraries(opengv PUBLIC Eigen3::Eigen)
 
 target_include_directories( random_generators PRIVATE ${ADDITIONAL_INCLUDE_DIRS} )
 

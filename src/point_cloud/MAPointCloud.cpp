@@ -29,6 +29,8 @@
  ******************************************************************************/
 
 
+#include <cassert>
+
 #include <opengv/point_cloud/MAPointCloud.hpp>
 
 opengv::point_cloud::MAPointCloud::MAPointCloud(

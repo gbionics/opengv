@@ -29,6 +29,8 @@
  ******************************************************************************/
 
 
+#include <cassert>
+
 #include <opengv/relative_pose/MANoncentralRelativeMulti.hpp>
 
 opengv::relative_pose::MANoncentralRelativeMulti::MANoncentralRelativeMulti(

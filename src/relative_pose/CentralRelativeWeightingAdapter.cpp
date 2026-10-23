@@ -29,6 +29,8 @@
  ******************************************************************************/
 
 
+#include <cassert>
+
 #include <opengv/relative_pose/CentralRelativeWeightingAdapter.hpp>
 
 opengv::relative_pose::CentralRelativeWeightingAdapter::CentralRelativeWeightingAdapter(

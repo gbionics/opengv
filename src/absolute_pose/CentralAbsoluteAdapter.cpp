@@ -29,6 +29,8 @@
  ******************************************************************************/
 
 
+#include <cassert>
+
 #include <opengv/absolute_pose/CentralAbsoluteAdapter.hpp>
 
 
