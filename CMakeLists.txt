@@ -190,6 +190,8 @@ target_include_directories( opengv PUBLIC
                 # only when using the lib from the install path
                 $<INSTALL_INTERFACE:include>
                 )
+get_target_property(EIGEN3_INCLUDE_DIR Eigen3::Eigen INTERFACE_INCLUDE_DIRECTORIES)
+target_include_directories(opengv PRIVATE ${EIGEN3_INCLUDE_DIR}/unsupported)
 target_link_libraries(opengv PUBLIC Eigen3::Eigen)
 
 target_include_directories( random_generators PRIVATE ${ADDITIONAL_INCLUDE_DIRS} )
