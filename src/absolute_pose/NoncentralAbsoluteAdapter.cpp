@@ -29,6 +29,8 @@
  ******************************************************************************/
 
 
+#include <cassert>
+
 #include <opengv/absolute_pose/NoncentralAbsoluteAdapter.hpp>
 
 opengv::absolute_pose::NoncentralAbsoluteAdapter::NoncentralAbsoluteAdapter(

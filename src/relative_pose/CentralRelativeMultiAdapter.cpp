@@ -29,6 +29,8 @@
  ******************************************************************************/
 
 
+#include <cassert>
+
 #include <opengv/relative_pose/CentralRelativeMultiAdapter.hpp>
 
 opengv::relative_pose::CentralRelativeMultiAdapter::CentralRelativeMultiAdapter(

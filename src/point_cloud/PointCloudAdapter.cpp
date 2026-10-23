@@ -29,6 +29,8 @@
  ******************************************************************************/
 
 
+#include <cassert>
+
 #include <opengv/point_cloud/PointCloudAdapter.hpp>
 
 opengv::point_cloud::PointCloudAdapter::PointCloudAdapter(

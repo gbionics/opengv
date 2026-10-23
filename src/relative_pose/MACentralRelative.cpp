@@ -29,6 +29,8 @@
  ******************************************************************************/
 
 
+#include <cassert>
+
 #include <opengv/relative_pose/MACentralRelative.hpp>
 
 opengv::relative_pose::MACentralRelative::MACentralRelative(

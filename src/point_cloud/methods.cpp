@@ -29,6 +29,8 @@
  ******************************************************************************/
 
 
+#include <cassert>
+
 #include <opengv/point_cloud/methods.hpp>
 #include <opengv/Indices.hpp>
 
